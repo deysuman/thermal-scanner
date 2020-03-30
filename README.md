@@ -7,15 +7,15 @@ thermal camera connected to a Raspberry Pi computer. Packaged with
 a battery and small screen, you can create a portable, handheld
 device to have a quick measure if someone has fever or not.
 
-|animation   | device  |
-|---|---|
-|<img alt="preview" src="resources/doc/preview.gif" height=400 width=240> | <img alt="box" src="resources/doc/01.jpg" height=400 width=533>|
+|animation   |
+|---|
+|<img alt="preview" src="resources/doc/preview.gif" height=400 width=240> |
 
 ## Part list
 
 For this prototype, the following hardware has been used:
 - Raspberry Pi 2, 3 or 4
-- MLX90640 Thermal Sensor, 32x24 px 
+- MLX90640 Thermal Sensor, 32x24 px
 - Waveshare 4.3inch HDMI LCD (B), 800x480, IPS
 - 5V 2.4A power adapter (2x)
 - microSD card 8Gb or larger
@@ -23,9 +23,9 @@ For this prototype, the following hardware has been used:
 ## MLX90640 Far infrared Thermal Sensor
 
 The [MLX90640](https://www.melexis.com/en/product/MLX90640/Far-Infrared-Thermal-Sensor-Array) is a thermal camera
-made by Melexis N.V. It has a I2C interface, which is perfect for the Raspberry Pi and other embedded devices. You can 
+made by Melexis N.V. It has a I2C interface, which is perfect for the Raspberry Pi and other embedded devices. You can
 find the C++ API, driver and documentation on their [Github](https://github.com/melexis/mlx90640-library) page.
-The company Pimoroni has made a 
+The company Pimoroni has made a
 [breakout board](https://shop.pimoroni.com/products/mlx90640-thermal-camera-breakout?variant=12536948654163) around this
 sensor, for easy integration with a Raspberry Pi.
 
@@ -46,7 +46,7 @@ The software is made and tested on Raspbian (Buster). Open `/boot/config.txt` an
 max_usb_current=1
 hdmi_group=2
 hdmi_mode=87
-hdmi_cvt 800 480 60 6 0 0 0 
+hdmi_cvt 800 480 60 6 0 0 0
 # Rotate the screen to portrait mode
 display_rotate=3
 
@@ -71,14 +71,14 @@ In the `bin` directory is a script, called `install_dependencies.sh`.
 
 ## Download the precompiled binary and run the app
 
-Download the latest [release](https://github.com/gilbertfrancois/skin-temperature-scanner/releasehttps://github.com/gilbertfrancois/skin-temperature-scanner/releases) 
+Download the latest [release](https://github.com/gilbertfrancois/skin-temperature-scanner/releasehttps://github.com/gilbertfrancois/skin-temperature-scanner/releases)
 and unpack the application in your preferred location:
 ```shell script
 tar zxvf ThermalCamera_1.0.1_raspbian_buster_armv7l.tar.gz
 cd ThermalCamera/bin
 ./install_dependencies.sh
 ```
-Check the settings in `/boot/config.txt` like described above. There is an example file in `resources/boot/config.txt` in 
+Check the settings in `/boot/config.txt` like described above. There is an example file in `resources/boot/config.txt` in
 this bundle. After changing the config.txt file, reboot the Raspberry Pi.
 
 To run the application:
@@ -101,7 +101,7 @@ cd build
 cmake ..
 make
 ./ThermalCamera
-``` 
+```
 
 ## References
 
