@@ -71,7 +71,7 @@ In the `bin` directory is a script, called `install_dependencies.sh`.
 
 ## Download the precompiled binary and run the app
 
-Download the latest [release](https://github.com/gilbertfrancois/skin-temperature-scanner/releasehttps://github.com/gilbertfrancois/skin-temperature-scanner/releases)
+Download the latest [release](https://github.com/deysuman/thermal-scanner/release)
 and unpack the application in your preferred location:
 ```shell script
 tar zxvf ThermalCamera_1.0.1_raspbian_buster_armv7l.tar.gz
@@ -93,8 +93,8 @@ Instead of downloading the precompiled binary, you can download the source files
 the steps below:
 
 ```shell script
-git clone https://github.com/gilbertfrancois/skin-temperature-scanner.git
-cd skin-temperature-scanner
+git clone https://github.com/deysuman/thermal-scanner.git
+cd thermal-scanner
 ./bin/install_dependencies.sh
 mkdir build
 cd build
